@@ -1,0 +1,83 @@
+//DISPLAY ELEMENTS
+@mixin flex-config($dis, $direction, $corte, $just, $align) {
+  display: $dis;
+  flex-flow: $direction $corte;
+  justify-content: $just;
+  align-items: $align;
+}
+@mixin responsive($medida: 480px) {
+  @media screen and (max-width: $medida) {
+    @content;
+  }
+}
+
+//ANIMATIONS
+
+@mixin app-gradient-dark-bg {
+  /*Background gradient used on the entire app */
+  background-image: linear-gradient(
+    to bottom right,
+    $color-background-dark,
+    $color-background-mid-blue,
+    $color-background-mid-purple,
+    $color-background-light
+  );
+}
+
+@mixin gradient-card-front-bg {
+  background-image: linear-gradient(
+    to bottom right,
+    $color-background-dark,
+    $color-background-mid-blue,
+    $color-background-mid-purple,
+    $color-background-light
+  );
+}
+@mixin gradient-card-back-bg {
+  background-image: linear-gradient(
+    to top left,
+    $color-background-dark,
+    $color-background-mid-blue,
+    $color-background-mid-purple,
+    $color-background-light
+  );
+}
+
+@mixin animated-primary-color-txt {
+  animation: gradient-color 2s linear infinite;
+  background: linear-gradient(
+    to right,
+    #ff8a2b,
+    $color-primary-light,
+    $color-primary-dark,
+    $color-primary-light,
+    #ff8a2b
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 200%;
+  // white-space: nowrap;
+}
+
+@mixin animated-tertiary-color-txt {
+  animation: gradient-color 1.3s linear infinite;
+  background: linear-gradient(to left, #5ea2e6, #b23ddc, #3c98f5);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 200%;
+  // white-space: nowrap;
+}
+
+@mixin animated-green-color-txt {
+  animation: gradient-color 1s linear infinite;
+  background: linear-gradient(
+    to right,
+    $color-green-light,
+    $color-green-dark,
+    $color-green-light
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 200%;
+  // white-space: nowrap;
+}
