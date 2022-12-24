@@ -56,9 +56,9 @@
   top: 0.5rem;
   right: -100%;
   width: 90%;
-  height: 50%;
+  height: 45rem;
   margin: 0;
-  padding: 10rem 0 6rem 0;
+  padding: 10rem 0 0rem 0;
   list-style: none;
   background-color: rgb(82, 40, 250);
   transition-duration: 0.25s;
@@ -71,6 +71,24 @@
     left: 1.3rem;
     width: 8rem;
     height: 8rem;
+  }
+
+  &__li {
+    padding: 1.5rem 0;
+    gap: 2rem;
+    padding-left: 2rem;
+    @include flex-config(flex, row, nowrap, flex-start, center);
+
+    .anchor-img {
+      width: 3rem;
+      height: 3rem;
+    }
+    .anchor-text {
+      font-weight: 800;
+      font-size: 2rem;
+      letter-spacing: 0.2rem;
+      text-transform: uppercase;
+    }
   }
 }
 .menu__item {

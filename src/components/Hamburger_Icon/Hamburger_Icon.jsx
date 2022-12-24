@@ -2,6 +2,9 @@ import React from "react";
 import "./hamburger_icon.scss";
 
 import LogoMenu from "../../assets/logo.png";
+import Entrada from "../../assets/categories_icon/entradas.png";
+
+import { categoryData } from "../../pages/Landing/category-data";
 
 const Hamburger_Icon = () => {
   return (
@@ -13,31 +16,14 @@ const Hamburger_Icon = () => {
 
       <ul className="menu__box">
         <img src={LogoMenu} alt="" className="menu__box__logomenu" />
-        <li>
-          <a className="menu__item" href="#">
-            Home
-          </a>
-        </li>
-        <li>
-          <a className="menu__item" href="#">
-            About
-          </a>
-        </li>
-        <li>
-          <a className="menu__item" href="#">
-            Team
-          </a>
-        </li>
-        <li>
-          <a className="menu__item" href="#">
-            Contact
-          </a>
-        </li>
-        <li>
-          <a className="menu__item" href="#">
-            Twitter
-          </a>
-        </li>
+        {categoryData.map((category) => (
+          <li className="menu__box__li">
+            <img src={category.icon} alt="" className="anchor-img" />
+            <a className="anchor-text" href="#">
+              {category.name}
+            </a>
+          </li>
+        ))}
       </ul>
     </div>
   );
