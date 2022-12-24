@@ -1,0 +1,15 @@
+.btn-orange {
+  color: $color-white;
+  //   font-weight: bold;
+  gap: 1rem;
+  border: none;
+  border-radius: 2rem;
+  padding: 1.3rem 2rem;
+  background-color: $color-secondary-light;
+  @include flex-config(flex, row, nowrap, center, center);
+  &__icon {
+    width: 2.3rem;
+    height: 2.3rem;
+    object-fit: contain;
+  }
+}

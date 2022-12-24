@@ -17,7 +17,7 @@ const Hamburger_Icon = () => {
       <ul className="menu__box">
         <img src={LogoMenu} alt="" className="menu__box__logomenu" />
         {categoryData.map((category) => (
-          <li className="menu__box__li">
+          <li className="menu__box__li" key={category.name}>
             <img src={category.icon} alt="" className="anchor-img" />
             <a className="anchor-text" href="#">
               {category.name}

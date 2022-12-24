@@ -5,14 +5,19 @@
   min-height: 100vh;
   position: relative;
   padding: 8.5rem 0 0 0;
+  @include flex-config(flex, column, nowrap, center, center);
 
   .title-menu {
     text-align: center;
   }
+  .text-menu {
+    padding: 1rem 0;
+    text-align: justify;
+  }
 
   .categories-container {
     // border: 1px solid blue;
-    padding: 2rem 0;
+    padding: 2rem 0 2.5rem 0;
     gap: 2rem;
     @include flex-config(flex, row, wrap, space-evenly, center);
   }
