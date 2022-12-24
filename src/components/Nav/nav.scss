@@ -1,0 +1,15 @@
+@import "../../sass/importStyles.scss";
+
+.nav-container {
+  height: 8rem;
+  padding: 0 8%;
+  width: 100%;
+  position: fixed;
+  @include flex-config(flex, row, nowrap, space-between, center);
+  z-index: 2;
+
+  &__logo {
+    width: 7rem;
+    height: 7rem;
+  }
+}

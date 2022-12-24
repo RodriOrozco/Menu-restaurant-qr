@@ -36,83 +36,6 @@
 
 //MOVEMENT-------------------------------------------------------------------------------------
 
-@-webkit-keyframes blob-slide {
-  0% {
-    -webkit-transform: translateY(0) translateX(0);
-    transform: translateY(0) translateX(0);
-  }
-  20% {
-    -webkit-transform: translateY(38.75%) translateX(12.5%);
-    transform: translateY(38.75%) translateX(12.5%);
-  }
-  40% {
-    -webkit-transform: translateY(77.5%) translateX(25%);
-    transform: translateY(77.5%) translateX(25%);
-  }
-  60% {
-    -webkit-transform: translateY(116.25%) translateX(37, 5%);
-    transform: translateY(116.25%) translateX(37, 5%);
-  }
-  100% {
-    -webkit-transform: translateY(155%) translateX(50%);
-    transform: translateY(155%) translateX(50%);
-  }
-}
-@keyframes blob-slide {
-  0% {
-    -webkit-transform: translateY(0) translateX(0);
-    transform: translateY(0) translateX(0);
-  }
-  20% {
-    -webkit-transform: translateY(38.75%) translateX(12.5%);
-    transform: translateY(38.75%) translateX(12.5%);
-  }
-  40% {
-    -webkit-transform: translateY(77.5%) translateX(25%);
-    transform: translateY(77.5%) translateX(25%);
-  }
-  60% {
-    -webkit-transform: translateY(116.25%) translateX(37, 5%);
-    transform: translateY(116.25%) translateX(37, 5%);
-  }
-  100% {
-    -webkit-transform: translateY(155%) translateX(50%);
-    transform: translateY(155%) translateX(50%);
-  }
-}
-
-@keyframes blob-750 {
-  0% {
-    -webkit-transform: translateY(0%) translateX(0%);
-    transform: translateY(0%) translateX(0%);
-  }
-  100% {
-    -webkit-transform: translateY(200%) translateX(24%);
-    transform: translateY(200%) translateX(24%);
-  }
-}
-@keyframes blob-650 {
-  0% {
-    -webkit-transform: translateY(0%) translateX(0%);
-    transform: translateY(0%) translateX(0%);
-  }
-  100% {
-    -webkit-transform: translateY(455%) translateX(14%);
-    transform: translateY(455%) translateX(10%);
-  }
-}
-@keyframes blob-410 {
-  0% {
-    -webkit-transform: translateY(0%);
-    transform: translateY(0%);
-  }
-  100% {
-    -webkit-transform: translateY(950%);
-    transform: translateY(950%);
-  }
-}
-
-//ENTRANCES-----------------------------------------------------------------------------------
 @keyframes fadein-top {
   0% {
     opacity: 0;
@@ -175,19 +98,7 @@
   }
 }
 
-@keyframes github-entrance {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-@keyframes flip-card-entrance {
+@keyframes scale-in-entrance {
   0% {
     transform: scaleX(0);
   }

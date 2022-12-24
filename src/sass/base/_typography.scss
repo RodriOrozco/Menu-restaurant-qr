@@ -1,38 +1,46 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-// font-family: 'Bebas Neue', cursive;
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap");
-// font-family: 'Oswald', sans-serif;
-@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
-// font-family: 'Anton', sans-serif;
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
-// font-family: 'Roboto', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+// font-family: 'Lobster', cursive;
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap");
+// font-family: 'Lobster Two', cursive;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap");
+// font-family: 'Playfair Display SC', serif;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap");
+// font-family: 'Playfair Display SC', serif;
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Playfair Display SC", serif;
   color: $color-white;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .heading-primary {
   /*h1*/
-  color: $color-white;
-  font-family: "Anton", sans-serif;
-  font-size: 3.5rem;
+  background: linear-gradient(
+    175deg,
+    $color-gold-dark 5%,
+    $color-gold-light 100%
+  );
+  font-size: 2.5rem;
+  color: transparent;
+  text-transform: capitalize;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: "Lobster", cursive;
 }
 
 .heading-secondary {
   /*h2*/
   color: $color-white;
-  font-family: "Bebas Neue", cursive;
-  font-size: 3rem;
+  font-family: "Lobster Two", cursive;
+  font-size: 2rem;
   font-weight: 400;
 }
 
 .heading-tertiary {
   /*h3*/
   color: $color-white;
-  font-family: "Oswald", sans-serif;
-  font-size: 2rem;
+  font-family: "Playfair Display SC", serif;
+  font-size: 1.8rem;
   line-height: 1rem;
   font-weight: 400;
 }

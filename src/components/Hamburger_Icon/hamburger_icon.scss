@@ -1,0 +1,88 @@
+@import "../../sass/importStyles.scss";
+
+.hamburger-menu {
+  //   border: 1px solid blue;
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  right: 1.5rem !important;
+}
+.menu__btn {
+  position: absolute;
+  right: 0.3rem;
+  bottom: 0;
+  width: 3rem;
+  height: 2rem;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0.3rem;
+  background-color: $color-white;
+  transition-duration: 0.25s;
+}
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0.5rem;
+  right: -100%;
+  width: 90%;
+  height: 50%;
+  margin: 0;
+  padding: 10rem 0 6rem 0;
+  list-style: none;
+  background-color: rgb(82, 40, 250);
+  transition-duration: 0.25s;
+  border-radius: 2rem;
+
+  &__logomenu {
+    position: absolute;
+    z-index: 2;
+    top: 0.5rem;
+    left: 1.3rem;
+    width: 8rem;
+    height: 8rem;
+  }
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+.menu__item:hover {
+  background-color: #cfd8dc;
+}

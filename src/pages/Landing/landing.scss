@@ -1,0 +1,16 @@
+@import "../../sass/importStyles.scss";
+
+.landing-container {
+  border: 1px solid orange;
+  min-height: 100vh;
+  position: relative;
+  padding: 8.5rem 0 0 0;
+
+  .title-menu {
+    text-align: center;
+  }
+
+  .categories-container {
+    border: 1px solid blue;
+  }
+}
