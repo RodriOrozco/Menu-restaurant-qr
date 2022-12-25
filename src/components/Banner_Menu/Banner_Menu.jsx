@@ -1,12 +1,12 @@
 import React from "react";
 import "./banner_menu.scss";
 
-const Banner_Menu = ({ title, description }) => {
+const Banner_Menu = ({ title, description, image }) => {
   return (
     <div className="banner-menu">
-      <h2 className="heading-secondary">Entradas</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <img src="" alt="" />
+      <h2 className="heading-secondary">{title}</h2>
+      <p>{description}</p>
+      <img src={image} alt="" className="bg-image" />
     </div>
   );
 };

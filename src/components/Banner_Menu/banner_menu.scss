@@ -7,8 +7,7 @@
   position: relative;
   @include flex-config(flex, column, nowrap, center, flex-start);
 
-  &::after {
-    content: "";
+  .bg-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -16,9 +15,7 @@
     width: 100%;
     height: 100%;
     opacity: 0.3;
-    border-radius: 1rem;
-    background-size: cover;
-    background-position: center;
-    background-image: url("../../assets/banner-bg/starters-food.jpg");
+    object-fit: cover;
+    object-position: center;
   }
 }

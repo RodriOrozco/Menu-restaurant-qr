@@ -18,8 +18,8 @@ const Landing = () => {
         turpis non sapien elementum tincidunt.{" "}
       </p>
       <div className="categories-container">
-        {categoryData.map((category) => (
-          <CategoryAnchor name={category.name} icon={category.icon} />
+        {categoryData.map((category, i) => (
+          <CategoryAnchor name={category.name} icon={category.icon} key={i} />
         ))}
       </div>
       <button className="btn-orange">

@@ -19,7 +19,10 @@ const Hamburger_Icon = () => {
         {categoryData.map((category) => (
           <li className="menu__box__li" key={category.name}>
             <img src={category.icon} alt="" className="anchor-img" />
-            <a className="anchor-text" href="#">
+            <a
+              className="anchor-text heading-tertiary"
+              href={`#${category.name}`}
+            >
               {category.name}
             </a>
           </li>

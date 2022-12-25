@@ -1,7 +1,8 @@
 @import "../../sass/importStyles.scss";
 
 .menu-container {
-  border: 1px solid orange;
+  // border: 1px solid orange;
   min-height: 100vh;
-  padding: 8.5rem 0 0 0;
+  padding: 8.5rem 0 2rem 0;
+  border-bottom: 0.5rem groove $color-gold-dark;
 }
