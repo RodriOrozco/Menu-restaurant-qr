@@ -1,0 +1,24 @@
+@import "../../sass/importStyles.scss";
+
+.banner-menu {
+  gap: 1rem;
+  width: 100%;
+  height: 12rem;
+  position: relative;
+  @include flex-config(flex, column, nowrap, center, flex-start);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../assets/banner-bg/starters-food.jpg");
+  }
+}

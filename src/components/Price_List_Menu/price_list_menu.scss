@@ -1,0 +1,23 @@
+@import "../../sass/importStyles.scss";
+
+.pricing-container {
+  border: 1px solid white;
+
+  &__price {
+    padding: 1rem 0;
+    @include flex-config(flex, row, nowrap, space-between, center);
+
+    .name-food {
+      line-height: 1.6rem;
+      word-spacing: 0.1rem;
+      width: 75%;
+    }
+    .price-food {
+      text-align: end;
+      width: 25%;
+    }
+  }
+  &__description {
+    color: $color-grey;
+  }
+}
