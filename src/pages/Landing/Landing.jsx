@@ -6,7 +6,7 @@ import { categoryData } from "./category-data";
 import CategoryAnchor from "../../components/Categories_Anchor/Categories_Anchor";
 
 import btnIcon from "../../assets/PDF-CV/menu.png";
-import MenuPdf from "../../assets/PDF-CV/CV-RodrigoOrozco-Frontend.pdf";
+import MenuPdf from "../../assets/PDF-CV/CV-RodrigoOrozco-FrontendDeveloper.pdf";
 
 const Landing = () => {
   return (
@@ -24,7 +24,7 @@ const Landing = () => {
       </div>
       <button className="btn-orange">
         <img src={btnIcon} alt="" className="btn-orange__icon" />
-        <a href={MenuPdf} download={"CV-RodrigoOrozco-Frontend.pdf"}>
+        <a href={MenuPdf} download={"CV-RodrigoOrozco-FrontendDeveloper.pdf"}>
           Descargar menú
         </a>
       </button>
